@@ -1,0 +1,61 @@
+﻿<Window x:Class="JobSpot.RegisterUserProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JobSpot"
+        Icon="./Resources/icon.png"
+        mc:Ignorable="d"
+        Height="750" Width="650" Background="Gray">
+    <ScrollViewer>
+        <StackPanel Margin="10">
+            <Label Content="JobSpot" Foreground="Lime" FontWeight="Bold" FontStyle="Italic" FontFamily="arial" FontSize="50" HorizontalAlignment="Left"/>
+            <Grid Margin="50,50,50,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Imię:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                <TextBox x:Name="TxtBox_Name" Grid.Row="0" Margin="200,5,10,5" FontSize="15" VerticalContentAlignment="Center"/>
+
+                <Label Content="Nazwisko:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="1"/>
+                <TextBox x:Name="TxtBox_Surname" Grid.Row="1" Margin="200,5,10,5" FontSize="15" VerticalContentAlignment="Center"/>
+
+                <Label Content="Data urodzin:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="2"/>
+                <DatePicker x:Name="DatePicker_DateOfBirth" Grid.Row="2" VerticalAlignment="Center" Margin="200,5,10,5" FontSize="15" VerticalContentAlignment="Center"/>
+
+                <Label Content="Numer telefonu:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,10,10,10" Grid.Row="3"/>
+                <TextBox x:Name="TxtBox_PhoneNumber" Grid.Row="3" Margin="200,5,10,5" FontSize="15" VerticalContentAlignment="Center"/>
+
+                <Label Content="Miejsce zamieszkania:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,10,10,10" Grid.Row="4"/>
+                <TextBox x:Name="TxtBox_PlaceOfResidence" Grid.Row="4" Margin="200,5,10,5" FontSize="15" VerticalContentAlignment="Center"/>
+
+                <Label Content="Doświadczenie zawodowe:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,10,10,10" Grid.Row="5"/>
+                <TextBox x:Name="TxtBox_WorkExperience" Grid.Row="5" Margin="200,5,10,5" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+
+                <Label Content="Edukacja:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="6"/>
+                <TextBox x:Name="TxtBox_Education" Grid.Row="6" Margin="200,5,10,5" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+
+                <Label Content="Znane języki:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="7"/>
+                <TextBox x:Name="TxtBox_Languages" Grid.Row="7" Margin="200,5,10,5" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+
+                <Label Content="Umiejętności:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="8"/>
+                <TextBox x:Name="TxtBox_Skills" Grid.Row="8" Margin="200,5,10,5" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+
+                <Label Content="Odbyte kursy:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="9"/>
+                <TextBox x:Name="TxtBox_Courses" Grid.Row="9" Margin="200,5,10,5" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+            </Grid>
+
+            <Button x:Name="btn_UniversalBtn" Click="RegisterUserProfile" FontFamily="arial" FontWeight="Bold" FontStyle="Italic" Background="Lime" FontSize="20" Width="150" Height="50" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
