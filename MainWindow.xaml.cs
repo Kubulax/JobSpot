@@ -129,10 +129,10 @@ namespace JobSpot
             }
 
 
-            string contractTpye = String.Empty;
+            string contractType = String.Empty;
             if (CmbBox_ContractType.SelectedItem != null)
             {
-                contractTpye = ((ComboBoxItem)CmbBox_ContractType.SelectedItem).Content.ToString();
+                contractType = ((ComboBoxItem)CmbBox_ContractType.SelectedItem).Content.ToString();
             }
 
 
@@ -175,9 +175,9 @@ namespace JobSpot
             {
                 filters.Add(new FilterParam("PositionLevel", positionLevel));
             }
-            if (!string.IsNullOrWhiteSpace(contractTpye))
+            if (!string.IsNullOrWhiteSpace(contractType))
             {
-                filters.Add(new FilterParam("ContractType", contractTpye));
+                filters.Add(new FilterParam("ContractType", contractType));
             }
             if (!string.IsNullOrWhiteSpace(employmentType))
             {
